@@ -9,7 +9,7 @@ TIMESTAMPDIFF(SECOND,TO_TIMESTAMP(STARTED_AT), TO_TIMESTAMP(ENDED_AT)) as TRIP_D
 
 From {{ ref('stage_bike') }}
 where RIDE_ID != 'ride_id'
-Limit 10
+
 
 )
 Select * from Trips

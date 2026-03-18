@@ -12,4 +12,4 @@ WITH CTE AS (
 Select 
 * 
 from 
-CTE
+CTE 
