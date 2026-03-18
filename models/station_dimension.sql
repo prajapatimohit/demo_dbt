@@ -7,7 +7,7 @@ START_LAT,
 START_LNG
 
 
-From {{ source('demo', 'bike') }}
+From {{ ref('stage_bike') }}
 where RIDE_ID != 'ride_id'
 
 

@@ -12,8 +12,7 @@ as DAY_TYPE,
 {{ get_season('STARTED_AT')}}
 as  STATION_OF_YEAR
 
-from 
-{{ source('demo', 'bike')}}
+From {{ ref('stage_bike') }}
 where STARTED_AT != 'started_at'
 
 )
